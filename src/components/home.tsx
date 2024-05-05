@@ -1,6 +1,8 @@
-import userImg from "../assets/user.png";
 import { IoCloudDownloadOutline } from "react-icons/io5";
 import { TypeAnimation } from "react-type-animation";
+
+import userImg from "../assets/user.webp";
+
 const Home = () => {
   return (
     <div className="page-container align-center">
