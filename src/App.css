@@ -190,7 +190,12 @@ textarea {
   column-gap: 16px;
   flex-wrap: wrap;
 }
-
+.name-email-container > div{
+  width: calc(50% - 8px);
+}
+.name-email-container input{
+  width: 100%;
+}
 .tech-stack-container {
   display: flex;
   flex-wrap: wrap;
@@ -444,5 +449,8 @@ display: block;
     font-size: 18px;
 
 
+  }
+  .name-email-container > div{
+    width: 100%;
   }
 }
