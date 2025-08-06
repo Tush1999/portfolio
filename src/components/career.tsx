@@ -1,36 +1,9 @@
 import { Link } from "react-router-dom";
 
-const SITE_LINKS = [
-  {
-    label: "bystadium.com",
-    route: "https://www.bystadium.com",
-  },
-  {
-    label: "snackmagic.com",
-    route: "https://www.snackmagic.com",
-  },
-  {
-    label: "swagmagic.com",
-    route: "https://www.swagmagic.com",
-  },
-  {
-    label: "superiordishes.com",
-    route: "https://www.superiordishes.com",
-  },
-];
+
 
 const Career = () => {
-  const siteLinks = (
-    <>
-      {SITE_LINKS.map(({ label, route }, index) => (
-        <>
-          <Link to={route} target="_blank">
-            {label}
-          </Link>
-        </>
-      ))}
-    </>
-  );
+
   return (
     <div className="page-container">
       <div className="container">
@@ -44,81 +17,44 @@ const Career = () => {
           <ol className="work-experience-list-container">
             <li>
               <div>
-                <div className="profile-title">Senior Software Engineer</div>
+                <div className="profile-title">Senior Web Designer</div>
                 <div>
-                  <a href="https://www.vinsol.com" target="_blank">
-                    Vinsol Pvt Ltd
+                  <a href="https://www.prepladder.com" target="_blank">
+                    Prepladder Pvt Ltd
                   </a>
-                  <span className="company-location">New Delhi, India</span>
+                  <span className="company-location">Chandigarh, India</span>
                 </div>
-                <div>October 2023-Present 4mos</div>
+                <div>Sep 2020 - Present </div>
               </div>
               <ul>
-                <li>
-                  Currently managing and developing multiple websites including{" "}
-                  <Link to="https://www.bystadium.com" target="_blank">
-                    bystadium.com
-                  </Link>{" "}
-                  ,
-                  <Link to="https://www.snackmagic.com" target="_blank">
-                    snackmagic.com
-                  </Link>
-                  ,{" "}
-                  <Link to="https://www.swagmagic.com" target="_blank">
-                    swagmagic.com
-                  </Link>,{" "}
-                  <Link to="https://www.superiordishes.com" target="_blank">
-                    superiordishes.com
-                  </Link>.
-                </li>
-                <li>
-                  Collaborating effectively with cross-functional teams to
-                  deliver impactful features.
-                </li>
-                <li>
-                  Create a micro frontend architecture to ensure fast website
-                  performance.
-                </li>
-                <li>Integrated Prismic as headless CMS for the website.</li>
-                <li>
-                  Integrated backend APIs using REST or GraphQL for data
-                  retrieval and manipulation.
-                </li>
-                <li>
-                  Conducted code reviews to ensure code quality and adherence to
-                  best practices.
-                </li>
-                <li>
-                  Worked with project managers to prioritize tasks and meet
-                  project deadlines.
-                </li>
-                <li>
-                  {" "}
-                  Provided technical guidance and mentorship to junior
-                  developers
-                </li>
-                <li>
-                  Participated in team meetings and discussions to improve
-                  development processes and strategies.
-                </li>
-              </ul>
+  <li>Designed and developed UIs within frontend web frameworks, utilizing templates and tools to expedite development processes.</li>
+  <li>Spearheaded the creation of a custom design framework for PrepLadder, featuring pre-styled components, layouts, and helper classes.</li>
+  <li>Modularized CSS code to optimize performance by loading only necessary CSS for each page.</li>
+  <li>Enhanced page performance by optimizing metrics such as CLS, LCP, and FCP.</li>
+  <li>Proficient in HTML, CSS, Sass CSS Preprocessor, Bootstrap, and responsive design for React and Next.js projects.</li>
+  <li>Facilitated system integration testing and coordinated user acceptance testing.</li>
+  <li>Recommended and implemented design changes for iterative product updates.</li>
+  <li><strong>Achievement:</strong> Awarded PrepStar (Employee of the Quarter) for excellent performance in the tech team.</li>
+</ul>
             </li>
             <li>
               <div>
-                <div className="profile-title">Research Intern</div>
+                <div className="profile-title">Web Designer</div>
                 <div>
-                  <a href="https://www.vinsol.com" target="_blank">
-                    IIT Bombay
+                  <a href="https://netzens.com/" target="_blank">
+                  Netzens Software
                   </a>
                   <span className="company-location">India</span>
                 </div>
-                <div>December 2019-Present 4mos</div>
+                <div>Sep 2018 – Dec 2019</div>
               </div>
-              <div className="mt10">
-                Conducted quantitative research, developing skills in data
-                analysis and Excel. Contributed to cutting-edge research
-                projects that have real-world applications.
-              </div>
+              <ul>
+  <li>Developed intricate user interfaces for diverse websites and applications using HTML, CSS, Bootstrap, WordPress, and various UI frameworks.</li>
+  <li>Collaborated closely with clients to conceptualize and actualize creative ideas, ensuring alignment with project objectives.</li>
+  <li>Proficient in graphic design software such as Photoshop and CorelDraw, crafting visually appealing website designs.</li>
+  <li>Prepared comprehensive design plans and effectively communicated website structures to stakeholders.</li>
+  <li><strong>Achievement:</strong> Recognized with the Employee of the Month award for outstanding performance within the tech team.</li>
+</ul>
             </li>
           </ol>
         </div>

@@ -28,7 +28,7 @@ const NAV_ELEMENTS = [
 
 const Header = () => {
   return <div className="header-wrapper">
-    <Link to="/" className="first-container">Tushar</Link>
+    <Link to="/" className="first-container">Shikha</Link>
     <div className="header-container">{NAV_ELEMENTS.map(({ id, route, label }) => {
       return (
         <NavLink to={route} key={id}>

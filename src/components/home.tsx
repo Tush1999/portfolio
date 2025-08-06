@@ -1,7 +1,7 @@
 import { IoCloudDownloadOutline } from "react-icons/io5";
 import { TypeAnimation } from "react-type-animation";
 
-import userImg from "../assets/user.webp";
+import userImg from "../assets/shikha.jpeg";
 
 const Home = () => {
   return (
@@ -12,9 +12,9 @@ const Home = () => {
             <TypeAnimation
               sequence={[
                 // Same substring at the start will only be typed out once, initially
-                "I am Tushar Bansal",
+                "I am Shikha Bansal",
                 1000, // wait 1s before replacing "Mice" with "Hamsters"
-                "I am FrontEnd Developer",
+                "I am Web Designer",
                 1000,
               ]}
               wrapper="span"
@@ -28,11 +28,11 @@ const Home = () => {
             />
           </div>
           <div className="user-profile">
-            I have 3 years of experience in building and designing
-            applications at Vinsol Pvt Limited, Specializing in FrontEnd Technologies. Proficient in Agile Methodologies,
-            leading a successful Project and delivering optimizes Solution.{" "}
+          I have 6 years of experience in building and designing applications, specializing in web design. Proficient in Agile methodologies, with a track record of leading successful projects and delivering optimized solutions.
+
+
           </div>
-          <a href="/Tushar CV.pdf" download>
+          <a href="/shikha_resume.pdf" download>
             {" "}
             Resume
             <IoCloudDownloadOutline />

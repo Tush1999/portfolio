@@ -2,23 +2,23 @@ import { Link } from "react-router-dom";
 import { IoLogoGithub } from "react-icons/io5";
 import { FaLinkedinIn } from "react-icons/fa";
 import { CiMail } from "react-icons/ci";
-
+import { IoCall } from "react-icons/io5";
 import "../assets/stylesheets/header.css";
 
 const FOOTER_ROWS = [
   {
     label: "Linkdin",
-    route: "https://www.linkedin.com/in/tushar-bansal-697386169",
+    route: "https://www.linkedin.com/in/shikha-bansal-328053162/",
     icon: <FaLinkedinIn />
   },
   {
-    label: "GitHub",
-    route: "https://github.com/Tush1999",
-    icon: <IoLogoGithub />
+    label: "Phone",
+    route: "tel:7888805216",
+    icon: <IoCall />
   },
   {
     label: "Mail",
-    route: "mailto:tusharbansal104@gmail.com",
+    route: "mailto:shikhabansal984@gmail.com",
     icon: <CiMail />
   },
 ];
