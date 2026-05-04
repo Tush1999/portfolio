@@ -1,5 +1,4 @@
 import { Link, NavLink } from "react-router-dom";
-import { FaHome } from "react-icons/fa";
 
 import "../assets/stylesheets/header.css";
 
