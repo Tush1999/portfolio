@@ -1,36 +1,54 @@
-import { Link } from "react-router-dom";
-
-const SITE_LINKS = [
+const EXPERIENCES = [
   {
-    label: "bystadium.com",
-    route: "https://www.bystadium.com",
+    title: "SDE2 - Full-Stack Developer",
+    company: "Fynd",
+    companyUrl: "https://www.fynd.com",
+    location: "Mumbai, India",
+    duration: "Nov 2025 - Present",
+    highlights: [
+      "Architected and shipped AI-powered video and image generation features on Pixelbin by integrating multiple LLM APIs into a React.js frontend with real-time preview and editing workflows.",
+      "Engineered backend API endpoints in Node.js to handle model orchestration, file processing, and async job queues for scalable content generation.",
+      "Collaborated with product and design teams to define UX patterns for AI-generated content, ensuring intuitive user flows and fast iteration cycles.",
+      "Implemented end-to-end error handling and loading states across the AI pipeline to maintain a smooth user experience under varying API response times.",
+    ],
   },
   {
-    label: "snackmagic.com",
-    route: "https://www.snackmagic.com",
-  },
-  {
-    label: "swagmagic.com",
-    route: "https://www.swagmagic.com",
-  },
-  {
-    label: "superiordishes.com",
-    route: "https://www.superiordishes.com",
+    title: "Senior Software Engineer - Frontend",
+    company: "Vinsol Pvt Ltd",
+    companyUrl: "https://www.vinsol.com",
+    location: "New Delhi, India",
+    duration: "Jul 2021 - Nov 2025",
+    highlights: [
+      <>
+        Developed and maintained frontend features for high-traffic e-commerce
+        platforms (
+        <a href="https://www.bystadium.com" target="_blank" rel="noreferrer">
+          bystadium.com
+        </a>
+        ,{" "}
+        <a href="https://www.snackmagic.com" target="_blank" rel="noreferrer">
+          snackmagic.com
+        </a>
+        ,{" "}
+        <a href="https://www.swagmagic.com" target="_blank" rel="noreferrer">
+          swagmagic.com
+        </a>
+        ) handling complex order workflows, payment integrations, and dynamic
+        product pages.
+      </>,
+      "Established a micro-frontend system with a TurboRepo monorepo setup, cutting build creation time by 66% and enabling independent deployments across teams.",
+      "Leveraged Next.js Server Components to improve Cumulative Layout Shift (CLS) by 98.75%, significantly boosting Core Web Vitals and SEO rankings.",
+      "Applied modular SCSS architecture with PurgeCSS to reduce production bundle size by 40%, improving page load performance across mobile and desktop.",
+      "Integrated Prismic as a headless CMS, building reusable content slices and connecting backend services through REST and GraphQL APIs for dynamic page rendering.",
+      "Deployed Sentry for real-time error tracking, performance monitoring, and alerting in production, reducing the mean time to detect issues by over 60%.",
+      "Built a 3D interactive product visualization using React Three Fiber, rendering courier box models with dynamic data to boost user engagement on product pages.",
+      "Configured FusionAuth for user authentication and implemented Single Sign-On (SSO) across multiple platforms, streamlining the login experience for 50,000+ users.",
+      "Mentored three junior developers through code reviews, pair programming sessions, and architecture discussions, helping them ramp up on React and Next.js best practices.",
+    ],
   },
 ];
 
 const Career = () => {
-  const siteLinks = (
-    <>
-      {SITE_LINKS.map(({ label, route }, index) => (
-        <>
-          <Link to={route} target="_blank">
-            {label}
-          </Link>
-        </>
-      ))}
-    </>
-  );
   return (
     <div className="page-container">
       <div className="container">
@@ -42,84 +60,27 @@ const Career = () => {
           </p>
           <h5 className="work-experience-title">Work Experience</h5>
           <ol className="work-experience-list-container">
-            <li>
-              <div>
-                <div className="profile-title">Senior Software Engineer</div>
-                <div>
-                  <a href="https://www.vinsol.com" target="_blank">
-                    Vinsol Pvt Ltd
-                  </a>
-                  <span className="company-location">New Delhi, India</span>
-                </div>
-                <div>October 2023-Present 4mos</div>
-              </div>
-              <ul>
-                <li>
-                  Currently managing and developing multiple websites including{" "}
-                  <Link to="https://www.bystadium.com" target="_blank">
-                    bystadium.com
-                  </Link>{" "}
-                  ,
-                  <Link to="https://www.snackmagic.com" target="_blank">
-                    snackmagic.com
-                  </Link>
-                  ,{" "}
-                  <Link to="https://www.swagmagic.com" target="_blank">
-                    swagmagic.com
-                  </Link>,{" "}
-                  <Link to="https://www.superiordishes.com" target="_blank">
-                    superiordishes.com
-                  </Link>.
+            {EXPERIENCES.map(
+              ({ title, company, companyUrl, location, duration, highlights }) => (
+                <li key={`${company}-${title}`}>
+                  <div>
+                    <div className="profile-title">{title}</div>
+                    <div>
+                      <a href={companyUrl} target="_blank" rel="noreferrer">
+                        {company}
+                      </a>
+                      <span className="company-location">{location}</span>
+                    </div>
+                    <div>{duration}</div>
+                  </div>
+                  <ul>
+                    {highlights.map((highlight, index) => (
+                      <li key={`${company}-highlight-${index}`}>{highlight}</li>
+                    ))}
+                  </ul>
                 </li>
-                <li>
-                  Collaborating effectively with cross-functional teams to
-                  deliver impactful features.
-                </li>
-                <li>
-                  Create a micro frontend architecture to ensure fast website
-                  performance.
-                </li>
-                <li>Integrated Prismic as headless CMS for the website.</li>
-                <li>
-                  Integrated backend APIs using REST or GraphQL for data
-                  retrieval and manipulation.
-                </li>
-                <li>
-                  Conducted code reviews to ensure code quality and adherence to
-                  best practices.
-                </li>
-                <li>
-                  Worked with project managers to prioritize tasks and meet
-                  project deadlines.
-                </li>
-                <li>
-                  {" "}
-                  Provided technical guidance and mentorship to junior
-                  developers
-                </li>
-                <li>
-                  Participated in team meetings and discussions to improve
-                  development processes and strategies.
-                </li>
-              </ul>
-            </li>
-            <li>
-              <div>
-                <div className="profile-title">Research Intern</div>
-                <div>
-                  <a href="https://www.vinsol.com" target="_blank">
-                    IIT Bombay
-                  </a>
-                  <span className="company-location">India</span>
-                </div>
-                <div>December 2019-Present 4mos</div>
-              </div>
-              <div className="mt10">
-                Conducted quantitative research, developing skills in data
-                analysis and Excel. Contributed to cutting-edge research
-                projects that have real-world applications.
-              </div>
-            </li>
+              )
+            )}
           </ol>
         </div>
       </div>

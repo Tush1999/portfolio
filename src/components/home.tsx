@@ -28,9 +28,14 @@ const Home = () => {
             />
           </div>
           <div className="user-profile">
-            I have 3 years of experience in building and designing
-            applications at Vinsol Pvt Limited, Specializing in FrontEnd Technologies. Proficient in Agile Methodologies,
-            leading a successful Project and delivering optimizes Solution.{" "}
+            Frontend-focused Full-Stack Developer with hands-on experience
+            shipping production web applications using React.js, Next.js,
+            TypeScript, and Redux. Skilled at optimizing Core Web Vitals,
+            architecting scalable frontend systems, and streamlining CI/CD
+            pipelines for faster delivery. Proven ability to lead development
+            efforts, mentor junior engineers, and align technical decisions with
+            business goals. Recently expanded into AI-powered product
+            development, building end-to-end features with LLM API integrations.
           </div>
           <a href="/Tushar CV.pdf" download>
             {" "}
